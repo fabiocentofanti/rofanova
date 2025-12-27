@@ -3,18 +3,16 @@
 \docType{package}
 \name{rofanova-package}
 \alias{rofanova-package}
-\alias{_PACKAGE}
 \title{Robust Functional Analysis of Variance}
 \description{
-Implements the robust functional analysis of variance (RoFANOVA), described in Centofanti et al. (2021) <arXiv:2112.10643>.
-    It allows testing mean differences among groups of  functional data by being robust against the presence of outliers.
+Implements the robust functional analysis of variance (RoFANOVA), described in Centofanti et al. (2023) \doi{10.1093/jrsssc/qlad074}. It allows testing mean differences among groups of functional data by being robust against the presence of outliers.
 }
 \details{
 \tabular{ll}{
 Package: \tab rofanova\cr
 Type: \tab Package\cr
-Version: \tab 1.0.0 \cr
-Date: \tab  2022-01-21 \cr
+Version: \tab 1.0.1 \cr
+Date: \tab  2025-12-27 \cr
 License: \tab GPL-3\cr
 }
 }
@@ -37,14 +35,13 @@ per_list_optimal<-rofanova(X_fdata,label_1,B = B,family="optimal",cores=cores)
 pvalue_optimal<-per_list_optimal$pval
 }
 \references{
-Centofanti, F., Colosimo, B.M., Grasso, M.L., Menafoglio, A., Palumbo, B., Vantini, S. (2021).
-Robust Functional ANOVA with Application to Additive Manufacturing.
-\emph{arXiv preprint arXiv:2112.10643}.
+Centofanti, F., Colosimo, B. M., Grasso, M. L., Menafoglio, A., Palumbo, B., & Vantini, S. (2023).
+Robust functional ANOVA with application to additive manufacturing.
+\emph{Journal of the Royal Statistical Society Series C: Applied Statistics}, 72(5), 1210-1234.
 }
 \seealso{
 \code{\link{rofanova}} \code{\link{fusem}} \code{\link{funmad}}
 }
 \author{
-Fabio Centofanti, Bianca Maria Colosimo, Marco Luigi Grasso,
-Antonio Lepore, Alessandra Menafoglio, Biagio Palumbo, Simone Vantini
+Fabio Centofanti
 }

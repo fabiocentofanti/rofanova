@@ -10,7 +10,7 @@ status](https://github.com/unina-sfere/rofanova/workflows/R-CMD-check/badge.svg)
 <!-- badges: end -->
 
 The package **rofanova** implements the robust nonparametric functional
-ANOVA method (RoFANOVA) proposed by Centofanti et al. (2021). RoFANOVA
+ANOVA method (RoFANOVA) proposed by Centofanti et al. (2023). RoFANOVA
 addresses the functional analysis of variance (FANOVA) problem, which
 aims to identify the presence of significant differences, in terms of
 functional mean, among groups of a functional data, by being robust
@@ -33,17 +33,25 @@ You can install the development version of **rofanova** from
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("unina-sfere/rofanova")
+devtools::install_github("fabiocentofanti/rofanova")
 ```
 
 <!-- You can install the released version of rofanova from [CRAN](https://CRAN.R-project.org) with: -->
+
 <!-- ``` r -->
+
 <!-- install.packages("rofanova") -->
+
 <!-- ``` -->
+
 <!-- And the development version from [GitHub](https://github.com/) with: -->
+
 <!-- ``` r -->
+
 <!-- # install.packages("devtools") -->
-<!-- devtools::install_github("unina-sfere/rofanova") -->
+
+<!-- devtools::install_github("fabiocentofanti/rofanova") -->
+
 <!-- ``` -->
 
 ## Example
@@ -51,7 +59,7 @@ devtools::install_github("unina-sfere/rofanova")
 This is a basic example which shows you how to apply the main function
 `rofanova` to perform both one-way and two-way FANOVA when data are
 univariate functional data. The data are generated as described in the
-first scenario of the simulation study in Centofanti et al. (2021).
+first scenario of the simulation study in Centofanti et al. (2023).
 
 We start by loading and attaching the **rofanova** package.
 
@@ -60,7 +68,7 @@ library(rofanova)
 ```
 
 Then, we generate the data and, just as an example, we fix the number of
-permutations *B* to 20.
+permutations $B$ to $20$.
 
 ``` r
 data_out<-simulate_data(scenario="one-way")
@@ -93,7 +101,7 @@ The p-values for the significance of the main factor are
 ``` r
 print(pvalues)
 #>   median    Huber bisquare   Hampel  optimal 
-#>     0.70     0.80     0.65     0.65     0.70
+#>     0.60     0.40     0.45     0.25     0.55
 ```
 
 Similarly, two-way FANOVA can be performed as follows.
@@ -124,14 +132,15 @@ factors and the interaction are
 ``` r
 print(pvalues)
 #>     median Huber bisquare Hampel optimal
-#> MOD   0.45  0.40     0.45   0.40    0.15
-#> F1    0.65  0.55     0.75   0.55    0.50
-#> F2    0.40  0.80     0.70   0.65    0.40
-#> INT   0.40  0.30     0.15   0.30    0.15
+#> MOD   0.55  0.35     0.45   0.65    0.60
+#> F1    0.40  0.20     0.50   0.35    0.25
+#> F2    0.40  0.40     0.25   0.60    0.65
+#> INT   0.85  0.70     0.55   0.70    0.75
 ```
 
 # References
 
--   Centofanti, F., Colosimo, B.M., Grasso, M., Menafoglio, A., Palumbo,
-    B., Vantini, S. (2021). Robust Functional ANOVA with Application to
-    Additive Manufacturing. *arXiv preprint arXiv:2112.10643*.
+Centofanti, F., Colosimo, B. M., Grasso, M. L., Menafoglio, A., Palumbo,
+B., & Vantini, S. (2023). Robust functional ANOVA with application to
+additive manufacturing. *Journal of the Royal Statistical Society Series
+C: Applied Statistics*, 72(5), 1210-1234.

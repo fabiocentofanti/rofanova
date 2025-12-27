@@ -2,7 +2,7 @@
 # Simulate data -----------------------------------------------------------
 
 #' @title Simulate data for Robust Functional ANOVA
-#' @description Generate synthetic data as in the simulation study of Centofanti et al. (2021) with the addition of the case of bi-variate functional data. All the details are in  Centofanti et al. (2021).
+#' @description Generate synthetic data as in the simulation study of Centofanti et al. (2023) with the addition of the case of bi-variate functional data. All the details are in  Centofanti et al. (2023).
 #' @param scenario  A  character strings indicating the scenario considered. It could be "one-way", "two-way", "one-way surface" and "two-way surface".
 #' @param mean A character strings indicating the type of mean function in one-way ANOVA. It could be "M1", "M2", and "M3".
 #' @param con A character strings indicating the type of contamination function. It could be "C0", for no contamination, "C1", "C2", "C3", "C4", "C5", and "C6".
@@ -29,9 +29,9 @@
 #'
 #' @export
 #' @references
-#' Centofanti, F., Colosimo, B.M., Grasso, M.L., Menafoglio, A., Palumbo, B., Vantini, S. (2021).
-#' Robust Functional ANOVA with Application to Additive Manufacturing.
-#' \emph{arXiv preprint arXiv:2112.10643}.
+#' Centofanti, F., Colosimo, B. M., Grasso, M. L., Menafoglio, A., Palumbo, B., & Vantini, S. (2023).
+#' Robust functional ANOVA with application to additive manufacturing.
+#' \emph{Journal of the Royal Statistical Society Series C: Applied Statistics}, 72(5), 1210-1234.
 #' @examples
 #' library(rofanova)
 #' data_out<-simulate_data(scenario="one-way")
@@ -318,7 +318,7 @@ simulate_data_twoway_sur<-function(con="C1",n_i=10,k_1=3,k_2=3,p=0.1,M=1,alpha=0
 # Robust location/scale estimation -----------------------------------------
 
 #' @title The scale equivariant functional M-estimator
-#' @description Compute the scale equivariant functional M-estimator as described in Centofanti et al. (2021).
+#' @description Compute the scale equivariant functional M-estimator as described in Centofanti et al. (2023).
 #' @param sig0_g Estimate of the standard error of \code{X}. If NULL, the functional mean is used. Default is NULL.
 #' @return
 #' A list containing the following arguments:
@@ -333,9 +333,9 @@ simulate_data_twoway_sur<-function(con="C1",n_i=10,k_1=3,k_2=3,p=0.1,M=1,alpha=0
 #'
 #' @export
 #' @references
-#' Centofanti, F., Colosimo, B.M., Grasso, M.L., Menafoglio, A., Palumbo, B., Vantini, S. (2021).
-#' Robust Functional ANOVA with Application to Additive Manufacturing.
-#' \emph{arXiv preprint arXiv:2112.10643}.
+#' Centofanti, F., Colosimo, B. M., Grasso, M. L., Menafoglio, A., Palumbo, B., & Vantini, S. (2023).
+#' Robust functional ANOVA with application to additive manufacturing.
+#' \emph{Journal of the Royal Statistical Society Series C: Applied Statistics}, 72(5), 1210-1234.
 #' @inheritParams rofanova
 #' @examples
 #'
@@ -517,15 +517,16 @@ rfun<-function (x,rho="bisquare",eff=0.95){
 
 
 #' @title The functional normalized median absolute deviation estimators
-#' @description Compute  the functional normalized median absolute deviation (FuNMAD) estimator  as described in Centofanti et al. (2021).
+#' @description Compute  the functional normalized median absolute deviation (FuNMAD) estimator  as described in Centofanti et al. (2023).
 #' @param ... Additional argument to be passed to \code{fusem}.
 #' @return The FuNMAD estimator.
 #'@seealso \code{\link{rofanova}} \code{\link{fusem}}
 #'
 #' @export
 #' @references
-#' Centofanti, F., Colosimo, B.M., Grasso, M.L., Menafoglio, A., Palumbo, B., Vantini, S. (2021).
-#' Robust Functional ANOVA with Application to Additive Manufacturing.
+#' Centofanti, F., Colosimo, B. M., Grasso, M. L., Menafoglio, A., Palumbo, B., & Vantini, S. (2023).
+#' Robust functional ANOVA with application to additive manufacturing.
+#' \emph{Journal of the Royal Statistical Society Series C: Applied Statistics}, 72(5), 1210-1234.
 #' \emph{arXiv preprint arXiv:2112.10643}.
 #' @inheritParams rofanova
 #' @examples
@@ -635,7 +636,7 @@ scale_res_twoway_pw_sur<-function(x,label_1,label_2,...){
 
 #' @title Robust Functional Analysis of Variance
 #' @description Robust Functional Analysis of Variance (RoFANOVA) allows identifying the presence of significant differences, in terms of
-#' functional mean, among groups of a functional data by being robust against the presence of outliers  (Centofanti et al., 2021).
+#' functional mean, among groups of a functional data by being robust against the presence of outliers  (Centofanti et al., 2023).
 #' @param X Either an object of class  \code{fdata} for monodimensional functional data  or an object of class \code{fdata2d} for bi-dimensional functional data.
 #' @param label_1 A vector of containing group label corresponding to the first main effect.
 #' @param label_2 A vector of containing group label corresponding to the second main effect. If it is NULL, the one-way RoFANOVA is performed.
@@ -692,9 +693,9 @@ scale_res_twoway_pw_sur<-function(x,label_1,label_2,...){
 #'
 #' @export
 #' @references
-#' Centofanti, F., Colosimo, B.M., Grasso, M.L., Menafoglio, A., Palumbo, B., Vantini, S. (2021).
-#' Robust Functional ANOVA with Application to Additive Manufacturing.
-#' \emph{arXiv preprint arXiv:2112.10643}.
+#' Centofanti, F., Colosimo, B. M., Grasso, M. L., Menafoglio, A., Palumbo, B., & Vantini, S. (2023).
+#' Robust functional ANOVA with application to additive manufacturing.
+#' \emph{Journal of the Royal Statistical Society Series C: Applied Statistics}, 72(5), 1210-1234.
 #' @examples
 #' library(rofanova)
 #' data_out<-simulate_data(scenario="one-way")

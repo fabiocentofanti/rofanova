@@ -11,7 +11,7 @@ Description: Implements the robust functional analysis of variance (RoFANOVA), d
     It allows testing mean differences among groups of  functional data by being robust against the presence of outliers.
 License: GPL-3
 Encoding: UTF-8
-RoxygenNote: 7.1.1
+RoxygenNote: 7.3.2
 LinkingTo: 
     Rcpp,RcppArmadillo
 Imports: 

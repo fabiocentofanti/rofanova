@@ -45,7 +45,7 @@ A list containing the following arguments:
 }
 }
 \description{
-Compute the scale equivariant functional M-estimator as described in Centofanti et al. (2021).
+Compute the scale equivariant functional M-estimator as described in Centofanti et al. (2023).
 }
 \examples{
 
@@ -55,9 +55,9 @@ X_fdata<-data_out$X_fdata
 per_list_median<-fusem(X_fdata)
 }
 \references{
-Centofanti, F., Colosimo, B.M., Grasso, M.L., Menafoglio, A., Palumbo, B., Vantini, S. (2021).
-Robust Functional ANOVA with Application to Additive Manufacturing.
-\emph{arXiv preprint arXiv:2112.10643}.
+Centofanti, F., Colosimo, B. M., Grasso, M. L., Menafoglio, A., Palumbo, B., & Vantini, S. (2023).
+Robust functional ANOVA with application to additive manufacturing.
+\emph{Journal of the Royal Statistical Society Series C: Applied Statistics}, 72(5), 1210-1234.
 }
 \seealso{
 \code{\link{rofanova}} \code{\link{funmad}}

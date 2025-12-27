@@ -85,7 +85,7 @@ The algorithm stops when the relative variation of the weighted norm sum between
 }
 \description{
 Robust Functional Analysis of Variance (RoFANOVA) allows identifying the presence of significant differences, in terms of
-functional mean, among groups of a functional data by being robust against the presence of outliers  (Centofanti et al., 2021).
+functional mean, among groups of a functional data by being robust against the presence of outliers  (Centofanti et al., 2023).
 }
 \examples{
 library(rofanova)
@@ -106,9 +106,9 @@ per_list_optimal<-rofanova(X_fdata,label_1,B = B,family="optimal",cores=cores)
 pvalue_optimal<-per_list_optimal$pval
 }
 \references{
-Centofanti, F., Colosimo, B.M., Grasso, M.L., Menafoglio, A., Palumbo, B., Vantini, S. (2021).
-Robust Functional ANOVA with Application to Additive Manufacturing.
-\emph{arXiv preprint arXiv:2112.10643}.
+Centofanti, F., Colosimo, B. M., Grasso, M. L., Menafoglio, A., Palumbo, B., & Vantini, S. (2023).
+Robust functional ANOVA with application to additive manufacturing.
+\emph{Journal of the Royal Statistical Society Series C: Applied Statistics}, 72(5), 1210-1234.
 }
 \seealso{
 \code{\link{fusem}} \code{\link{funmad}}

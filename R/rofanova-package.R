@@ -20,12 +20,11 @@ NULL
 #'
 #'
 #' @aliases rofanova-package
-#' @author Fabio Centofanti, Bianca Maria Colosimo, Marco Luigi Grasso,
-#'  Antonio Lepore, Alessandra Menafoglio, Biagio Palumbo, Simone Vantini
+#' @author Fabio Centofanti
 #' @references
-#' Centofanti, F., Colosimo, B.M., Grasso, M.L., Menafoglio, A., Palumbo, B., Vantini, S. (2021).
-#' Robust Functional ANOVA with Application to Additive Manufacturing.
-#' \emph{arXiv preprint arXiv:2112.10643}.
+#' Centofanti, F., Colosimo, B. M., Grasso, M. L., Menafoglio, A., Palumbo, B., & Vantini, S. (2023).
+#' Robust functional ANOVA with application to additive manufacturing.
+#' \emph{Journal of the Royal Statistical Society Series C: Applied Statistics}, 72(5), 1210-1234.
 #' @seealso \code{\link{rofanova}} \code{\link{fusem}} \code{\link{funmad}}
 #' @examples
 ##' library(rofanova)
