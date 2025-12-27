@@ -28,5 +28,7 @@ SystemRequirements: GNU make
 Suggests: 
     knitr,
     rmarkdown,
+    spelling,
     testthat
 Roxygen: list(markdown = TRUE)
+Language: en-US
