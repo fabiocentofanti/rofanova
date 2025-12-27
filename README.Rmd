@@ -17,6 +17,7 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 [![R build status](https://github.com/unina-sfere/rofanova/workflows/R-CMD-check/badge.svg)](https://github.com/unina-sfere/rofanova/actions)
+[![R-CMD-check](https://github.com/fabiocentofanti/rofanova/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/fabiocentofanti/rofanova/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The package  **rofanova** implements the robust nonparametric functional ANOVA method (RoFANOVA) proposed by Centofanti et al. (2023).
